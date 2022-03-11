@@ -1,3 +1,6 @@
 # files containing MAL API ID
 /anime_download.ipynb
 /lists_download.ipynb
+
+# temp data files
+/usernames
