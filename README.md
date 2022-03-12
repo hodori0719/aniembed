@@ -7,7 +7,7 @@ A front-end web app to allow queries on static results is in development.
 ## embeddings.py
 
 A similarity graph generated for the top 100 anime of all time on MyAnimeList using `embeddings.py`:
-![Top 100](https://myoctocat.com/assets/images/base-octocat.svg)
+![Top 100](https://github.com/hodori0719/aniembed/blob/7d97a6972ff13faa8cead9eaf174cea559a4f0fb/anime_clustering_tsne_100.png)
 
 `embeddings.py` uses neural network embeddings based on Apache MXNet to represent anime as 50-dimensional vectors. These vectors are trained on a neural network which takes lists of user ratings as inputs; the closer a single user rated two anime together, the more "similar" they are. This similarity index is calculated using the geometric mean of the offsets of the userscores from the mean scores, to account for popularity bias. You can find a simplified TensorFlow version of the neural net definition in the `embeddings.ipynb` Jupyter Notebook, but the data iterator is in `embeddings.py`.
 
