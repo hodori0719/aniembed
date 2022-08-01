@@ -2,7 +2,7 @@
 
 AniEmbed is a collection of Python scripts designed to generate neural-network based anime recommendations based on API data from the website MyAnimeList.net. AniEmbed comes in several disjoint parts: `embeddings.py`, which handles the neural network, the API download scripts for anime and anime rating data, and a simple web scraper for gathering usernames.
 
-Take this as an exercise rather than a working code repository. AniEmbed is not built for easy installation and usage.
+Take this as an exercise rather than a working code repository. AniEmbed is not built for easy installation and usage, and the final versions of many of the files are not reflected in this repo.
 
 ## embeddings.py
 
