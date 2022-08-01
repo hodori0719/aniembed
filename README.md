@@ -41,4 +41,4 @@ The scraper repeatedly requests the active users page at [https://myanimelist.ne
 
 ## Misc
 
-A front-end app using React.js to traverse through a pre-generated embedding graph is in development, but it's on hold until I'm able to resolve problems with MXNet.
+A front-end app to traverse through a pre-generated embedding graph would be nice, with a nearest neighbors algorithm. But this is on hold until I can clean up the ML code, which is very hard to do on an M1 at the moment.
