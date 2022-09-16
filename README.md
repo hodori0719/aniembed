@@ -13,7 +13,7 @@ A similarity graph generated for the top 100 anime of all time on MyAnimeList us
 
 The closer the dot product of two anime vectors is to 1, the more similar they will be. Since the resulting matrix is of n x 50 dimensions, n being the number of titles, this is impossible to visualize normally; thus, these vectors are mapped onto two dimensions using TSNE for better visualization.
 
-An example visualization trained on the 100 top anime with 100000 user lists is shown above. Anime closer to each other will be more similar, and those farther will be less. Notice the shonen cluster on the left, for instance, and the slice-of-life cluster to the right. (A few interesting observations: all of Kyoto Animation's titles (Hyouka, Clannad, KnK) are on right top of each other except Violet Evergarden, which is closer to the "edgelord" cluster with Elfen Lied and Evangelion! We also see popular shows like Konosuba S1 being closer to the shonen/isekai clusters, but S2 shifts back towards the slice of life category.)
+An example visualization trained on the 100 top anime with 100000 user lists is shown above. Anime closer to each other will be more similar, and those farther will be less. Notice the shonen cluster on the left, for instance, and the slice-of-life cluster to the right.
 
 To generate a graph, simply do:
 ```bash
@@ -23,15 +23,9 @@ after adjusting the global learning parameters in the heading. You will need fil
 
 ## anime_download.ipynb, lists_download.ipynb
 
-To run either of these items, you need a MyAnimeList API authentication token, which has been omitted from the public releases of these Notebooks. There is an official (but poor, IMO) [documentation of the MAL RESTful API](https://myanimelist.net/apiconfig/references/api/v2). 
-
-*WARNING*: MAL has no officially documented call limit, but generally waiting 500-1000ms between calls should be fine. Any more will lead to a temporary ban.
-
-## anime_download.ipynb, lists_download.ipynb
-
 To run either of these items, you need a MyAnimeList API authentication token, which has been omitted from the public releases of these Notebooks. There is an official (but poor, IMO) [documentation of the MAL API](https://myanimelist.net/apiconfig/references/api/v2). 
 
-Warning: MAL uses a RESTful API and has no officially documented call limit, but generally waiting 500-1000ms between calls should be fine. Any more will lead to a temporary ban.
+*WARNING*: MAL has no officially documented call limit, but generally waiting 500-1000ms between calls should be fine. Any more will lead to a temporary ban.
 
 ## malscraper.py
 
